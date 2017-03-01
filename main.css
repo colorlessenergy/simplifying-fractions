@@ -1,4 +1,6 @@
 html, body {
+  font-family: 'Roboto', sans-serif;
+
   margin: 0;
   padding: 0;
 }
@@ -37,13 +39,12 @@ footer a:hover {
   background-color: #832C65;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   height: 200px;
 }
 
-.input p {
-  margin: 0;
-  padding: 100px 100px;
+.input div p {
+  color: #fff;
 }
 
 .title {

@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>simplifying fractions</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <h1 class="title">Simplify Fractions</h1>
   <div class="info">
-    <p>Insert numerator and denominator and it will simplify to the most it can.</p>
+    <p>Insert numerator and denominator and the you will get it simplified.</p>
   </div>
   <div class="input">
     <div>
-      Numerator: <input type="text" id="numerator" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-      Denominator: <input type="text" id="denominator" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-      <button id="send">Send</button>
+      <p>Numerator: </p>
+      <input type="text" id="numerator" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
     </div>
+    <div>
+      <p>Denominator: </p>
+      <input type="text" id="denominator" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+    </div>
+    <button id="send">Send</button>
   </div>
   <div class="display">
     <p id="results"></p>
