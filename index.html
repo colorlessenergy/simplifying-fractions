@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>simplifying fractions</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <p>insert numerator and denominator and it will simplify to the most it can</p>
-  numerator: <input type="text" id="numerator">
-  denominator: <input type="text" id="denominator">
-  <button id="send">send</button>
-  <p id="results"></p>
-  <script src="main.js"></script>
+  <h1 class="title">Simplify Fractions</h1>
+  <div class="info">
+    <p>Insert numerator and denominator and it will simplify to the most it can.</p>
+  </div>
+  <div class="input">
+    <div>
+      Numerator: <input type="text" id="numerator" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+      Denominator: <input type="text" id="denominator" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+      <button id="send">Send</button>
+    </div>
+  </div>
+  <div class="display">
+    <p id="results"></p>
+  </div>
+  <footer><a href="https://github.com/colorlessenergy">colorlessenergy</a></footer>
+<script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.info, .display, footer {
+  align-items: center;
+  background-color: #621045;
+  color: #C583AE;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  margin: 0;
+  height: 300px;
+}
+
+footer {
+  height: 30px;
+}
+
+footer a {
+  color: #C583AE;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  transition: 1s ease;
+}
+
+
+
+.input {
+  align-content: center;
+  align-items: center;
+  background-color: #832C65;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+}
+
+.input p {
+  margin: 0;
+  padding: 100px 100px;
+}
+
+.title {
+  background-color: #42002B;
+  color: #C583AE;
+  margin: 0;
+  text-align: center;
+}

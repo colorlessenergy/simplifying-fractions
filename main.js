@@ -4,17 +4,16 @@ var send = document.getElementById("send");
 var lowNum;
 
 send.addEventListener("click", function () {
-  console.log(numerator.value, denominator.value);
-  if (parseInt(numerator.value) > parseInt(denominator.value)) {
-    lowNum = parseInt(denominator.value);
+  document.getElementById("results").innerHTML = "";
+  if (numerator.value > denominator.value) {
+    lowNum = denominator.value;
   } else {
-    lowNum = parseInt(numerator.value);
+    lowNum = numerator.value;
   }
 
   for (var i = 0; i < lowNum+1; i++) {
-    if (parseInt(numerator.value) % i === 0 && parseInt(denominator.value) % i === 0) {
-      console.log(i);
-      document.getElementById("results").innerHTML = "numerator: " + parseInt(numerator.value) / i + " denominator: " + parseInt(denominator.value) / i;
+    if (numerator.value % i === 0 && denominator.value % i === 0) {
+      document.getElementById("results").innerHTML = "numerator: " + numerator.value / i + " denominator: " + denominator.value / i;
     }
   }
 });
